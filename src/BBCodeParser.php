@@ -127,6 +127,11 @@ class BBCodeParser
           'pattern' => '/\[small\](.*?)\[\/small\]/s',
           'replace' => '<small>$1</small>',
           'content' => '$1'
+        ],
+        'fontfamily' => [
+            'pattern' => '/\[font\=(.*?)\](.*?)\[\/font\]/s',
+            'replace' => '<span style="font-family:$1">$2',
+            'content' => '$2'
         ]
     ];
 
